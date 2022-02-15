@@ -503,15 +503,46 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p>Оставьте свои данные, мы вам перезвоним</p>
-        <button class="modal-close-btn" data-modal-close >
+        <button class="modal-close-btn" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/new-sprite.svg#icon-close"></use>
           </svg>
         </button>
 
         <form name="form js-speaker-form" autocomplete="on" novalidate>
+                 
+          <label class="lable">
+            <input type="text" /> <span>Имя</span> 
+            <svg class="lable-svg" width="18" height="18">
+              <use href="./images/new-sprite.svg#icon-person"></use>
+            </svg>
+          </label>
 
-          <div class="form-field">
+          <label class="lable">
+            <input type="text"/><span>Телефон</span>
+            <svg class="lable-svg" width="18" height="18">
+              <use href="./images/new-sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="lable">
+            <input type="text"><span>Почта</span>
+            <svg class="lable-svg" width="18" height="18">
+              <use href="./images/new-sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="lable"><span class="coment">Комментарий</span>
+            <textarea name="feedback" placeholder="Введите текст"></textarea>
+          </label>
+
+
+          <!-- <div class="form-field">
+            <label class="label-coment">Комментарий</label>
+            <textarea name="feedback" placeholder="Введите текст"></textarea>
+          </div> -->
+
+          <!-- <div class="form-field">
             <label for="name">Имя </label>
             <input type="text" name="name" id="name" />
             <svg class="modal-icon">
@@ -538,19 +569,22 @@
           <div class="form-field">
             <label class="label-coment">Комментарий</label>
             <textarea name="feedback" placeholder="Введите текст"></textarea>
-          </div>
+          </div> -->
 
           <label>
             <div class="checkbox-text">
-              
-              <input class="checkbox" type="checkbox" name="hobby" value="music" />
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="hobby"
+                value="music"
+              />
               <span class="leb-icon"></span>
-              Соглашаюсь с рассылкой и принимаю 
+              Соглашаюсь с рассылкой и принимаю
               <a
                 href="https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80"
                 >Условия договора</a
               >
-              
             </div>
           </label>
 
