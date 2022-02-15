@@ -756,12 +756,13 @@ line-height: 16px; */
   left: 12px;
   top: 0px;
 }
-.lable:hover svg,
-.lable:focus svg {
+input:hover + svg,
+input:focus + svg {
   fill: var(--hover-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .lable textarea {
   margin-top: 30px;
   padding: 6px 10px;
@@ -842,61 +843,3 @@ textarea {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-/* .form-field svg {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 12px;
-  bottom: 11px;
-} */
-
-/* .form ::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-} */
-
-/* .form-field {
-  outline: 1px solid blue;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-} */
-/* .form-field label {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  margin-top: 10px;
-  margin-bottom: 4px;
-} */
-/* .form-field input {
-  margin: 0px;
-  padding: 6px 10px 6px 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 40px;
-} */
-/* .form-field input:hover,
-.form-field input:focus {
-  border: 1px solid var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* .form-field:hover,
-.form-field:focus {
-  fill: var(--hover-color);
-} */
-/* .form-field:hover svg,
-.form-field:focus svg {
-  fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .form-field input text {
-  margin-left: 42px;
-} */
