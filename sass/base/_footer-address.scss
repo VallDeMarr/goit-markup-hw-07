@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--cap-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+.footer .logo {
+  display: flex;
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+.city {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: initial;
+}
+.tel-mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: initial;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-addres li + li {
+  margin-top: 9px;
+}
+.footer-addres a {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-addres a:hover,
+.footer-addres a:focus {
+  color: var(--hover-color);
+}

@@ -1,0 +1,69 @@
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .items {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list .items:nth-child(3n) {
+  margin-right: 0px;
+}
+.list .items:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.name {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.name h2 {
+  margin-bottom: 4px;
+}
+.items a,
+.items img {
+  display: block;
+}
+
+.owerlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-paragraf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.items:hover .portfolio-paragraf {
+  transform: translateY(0%);
+}

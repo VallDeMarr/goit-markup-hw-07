@@ -1,0 +1,187 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  min-height: 581px;
+  width: 528px;
+
+  background-color: var(--white-color);
+  border-radius: 4px;
+  display: inline-block;
+}
+.modal p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.modal a {
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+.modal-close-btn {
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lable {
+  position: relative;
+}
+.lable input {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  padding: 6px 10px 6px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.lable input:hover,
+.lable input:focus {
+  border: 1px solid #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lable span {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.coment {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.lable .coment {
+  position: absolute;
+  top: -125px;
+  left: 0;
+}
+.lable svg {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+}
+input:hover + svg,
+input:focus + svg {
+  fill: var(--hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lable textarea {
+  margin-top: 30px;
+  padding: 6px 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 120px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.lable textarea:hover,
+.lable textarea:focus {
+  border: 1px solid var(--hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-send-btn {
+  color: var(--white-color);
+  background-color: #2196f3;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+textarea {
+  resize: none;
+}
+.form {
+  width: 342px;
+  height: 448px;
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 20px;
+}
+.checkbox-text a {
+  margin-left: 7px;
+}
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+.leb-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 7px;
+  margin-right: 9px;
+
+  cursor: pointer;
+  background-image: url(../images/vectord.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .leb-icon {
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
