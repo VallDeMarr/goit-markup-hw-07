@@ -1,0 +1,34 @@
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+.head-pages,
+.head-first {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.head-pages {
+  margin-left: 93px;
+}
+.head-address li + li {
+  margin-left: 50px;
+}
+.head-pages .item + .item {
+  margin-left: 50px;
+}
+.head-pages a {
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.head-pages .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

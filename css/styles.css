@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primery-color: #757575;
   --header-color: #212121;
   --hover-color: #2196f3;
@@ -28,9 +28,9 @@ p {
 }
 a {
   text-decoration: none;
-}
+} */
 /* ------------------------------HEADER-------------------------------------------- */
-.logo {
+/* .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -41,8 +41,8 @@ a {
 }
 .accent {
   color: var(--hover-color);
-}
-.head-nav {
+} */
+/* .head-nav {
   display: flex;
   align-items: center;
 }
@@ -75,7 +75,7 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 .head-address {
   display: flex;
   margin-left: auto;

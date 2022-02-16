@@ -1,0 +1,37 @@
+:root {
+  --primery-color: #757575;
+  --header-color: #212121;
+  --hover-color: #2196f3;
+  --white-color: #ffffff;
+  --btn-bg-color: #f5f4fa;
+  --logo-color: #000000;
+  --cap-bg: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-studio h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=variable.css.map */
