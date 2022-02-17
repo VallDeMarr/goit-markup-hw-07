@@ -3,9 +3,7 @@
   margin-top: 20px;
 }
 
-.footer-first {
-  width: 231px;
-}
+
 .footer-wrap {
   margin-left: 70px;
   & h3 {
@@ -20,7 +18,7 @@
 .footer > .container {
   display: flex;
 }
-.socials {
+.footer-list__socials {
   display: inline-flex;
   justify-content: center;
   align-items: center;

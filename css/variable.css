@@ -7,15 +7,18 @@
   --logo-color: #000000;
   --cap-bg: #2f303a;
 }
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -23,13 +26,12 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.main-studio h2 {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+/*# sourceMappingURL=variable.css.map */

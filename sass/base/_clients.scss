@@ -2,16 +2,16 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   & li + li {
     margin-left: 30px;
   }
 }
-.company-items {
+.clients__items {
   fill: #afb1b8;
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,12 @@
   }
 }
 
-.clients-link svg {
+.clients__link svg {
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover svg,
-.clients-link:focus svg {
+.clients__link:hover svg,
+.clients__link:focus svg {
   fill: #2196f3;
 }

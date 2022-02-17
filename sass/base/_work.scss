@@ -9,12 +9,13 @@
   }
 }
 
-.work-list {
+.work__list {
   position: relative;
   & img {
     display: block;
   }
   & p {
+    // Специфікація стилів не дозволяє задати через клас 
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
@@ -23,7 +24,7 @@
   }
 }
 
-.work-paragraf {
+.work__paragraf {
   position: absolute;
   bottom: 0;
   width: 370px;

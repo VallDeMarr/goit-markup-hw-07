@@ -22,10 +22,10 @@
 .head-address a:focus {
   color: var(--hover-color);
 }
-.head-pages .link.current {
+.head-pages__link.current {
   color: var(--hover-color);
 }
-.head-pages .link.current::after {
+.head-pages__link.current::after {
   position: absolute;
   display: flex;
   content: "";
@@ -36,7 +36,7 @@
   background: #2196f3;
   border-radius: 2px;
 }
-.head-pages .item {
+.head-pages__item {
   position: relative;
   bottom: 0;
 }

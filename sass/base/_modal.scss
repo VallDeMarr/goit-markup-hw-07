@@ -37,7 +37,7 @@
   }
 }
 
-.modal-close-btn {
+.modal__close-btn {
   display: flex;
   padding: 0;
   position: absolute;
@@ -148,7 +148,7 @@ input:focus + svg {
 textarea {
   resize: none;
 }
-.form {
+.modal__form {
   width: 342px;
   height: 448px;
   outline: 1px solid red;
