@@ -4,26 +4,25 @@
 .work {
   display: flex;
   margin-top: 50px;
+  & li + li {
+    margin-left: 30px;
+  }
 }
-.work li + li {
-  margin-left: 30px;
-}
+
 .work-list {
   position: relative;
+  & img {
+    display: block;
+  }
+  & p {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
-.work-list img {
-  display: block;
-}
-.work-list p {
-  font-weight: 700;
-  /* font-size: 14px;
-line-height: 16px; */
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 
-  color: #ffffff;
-}
 .work-paragraf {
   position: absolute;
   bottom: 0;

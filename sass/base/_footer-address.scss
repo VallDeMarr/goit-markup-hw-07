@@ -3,12 +3,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  & .logo {
+    display: flex;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
 }
-.footer .logo {
-  display: flex;
-  margin-bottom: 20px;
-  color: var(--white-color);
-}
+
 .city {
   color: var(--white-color);
   font-size: 14px;
@@ -28,8 +29,8 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-addres a:hover,
-.footer-addres a:focus {
-  color: var(--hover-color);
+  & a:hover,
+  & a:focus {
+    color: var(--hover-color);
+  }
 }

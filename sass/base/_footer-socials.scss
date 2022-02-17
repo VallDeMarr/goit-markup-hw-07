@@ -2,19 +2,20 @@
   display: flex;
   margin-top: 20px;
 }
-.footer-wrap h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+
 .footer-first {
   width: 231px;
 }
 .footer-wrap {
   margin-left: 70px;
+  & h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 .footer > .container {
   display: flex;
@@ -31,11 +32,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
 }
-.socials:hover,
-.socials:focus {
-  background-color: var(--hover-color);
-}
+
 .footer-list li + li {
   margin-left: 10px;
 }

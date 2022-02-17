@@ -1,7 +1,4 @@
-.portfolio .list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .list .items {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -30,10 +27,16 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  & h2 {
+    margin-bottom: 4px;
+  }
+  & p {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primery-color);
 }
-.name h2 {
-  margin-bottom: 4px;
 }
+
 .items a,
 .items img {
   display: block;

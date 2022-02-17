@@ -1,17 +1,21 @@
 .head-address {
   display: flex;
   margin-left: auto;
-}
-.head-address a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  & a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  color: var(--primery-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+    color: var(--primery-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  & li + li {
+  margin-left: 50px;
 }
+}
+
 .head-pages a:hover,
 .head-pages a:focus,
 .head-address a:hover,

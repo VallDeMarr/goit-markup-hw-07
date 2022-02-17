@@ -4,8 +4,7 @@
   position: relative;
   width: 570px;
   height: 86px;
-}
-.footer-subscribe p {
+  & p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -14,6 +13,8 @@
 
   color: #ffffff;
 }
+}
+
 .submit-btn {
   position: absolute;
   display: inline-flex;
@@ -34,10 +35,11 @@
   width: 200px;
   height: 50px;
   cursor: pointer;
-}
-.submit-btn svg {
+  & svg {
   margin-left: 10px;
 }
+}
+
 .mail-fill {
   position: absolute;
   bottom: 0;

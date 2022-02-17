@@ -5,11 +5,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -22,19 +23,20 @@
   background-color: var(--white-color);
   border-radius: 4px;
   display: inline-block;
+  & p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+  & a {
+    text-decoration: underline;
+    color: var(--hover-color);
+  }
 }
-.modal p {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-}
-.modal a {
-  text-decoration: underline;
-  color: var(--hover-color);
-}
+
 .modal-close-btn {
   display: flex;
   padding: 0;
@@ -49,55 +51,59 @@
   height: 30px;
   justify-content: center;
   align-items: center;
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .lable {
   position: relative;
+  & input {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    padding: 6px 10px 6px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  & span {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  & .coment {
+    position: absolute;
+    top: -125px;
+    left: 0;
+  }
+  & svg {
+    position: absolute;
+    left: 12px;
+    top: 0px;
+  }
 }
-.lable input {
-  width: 100%;
-  height: 40px;
-  margin-top: 30px;
-  padding: 6px 10px 6px 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
+
 .lable input:hover,
 .lable input:focus {
   border: 1px solid #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.lable span {
-  position: absolute;
-  top: -30px;
-  left: 0;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
+
 .coment {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.lable .coment {
-  position: absolute;
-  top: -125px;
-  left: 0;
-}
-.lable svg {
-  position: absolute;
-  left: 12px;
-  top: 0px;
-}
+
 input:hover + svg,
 input:focus + svg {
   fill: var(--hover-color);
@@ -158,13 +164,19 @@ textarea {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+  & a {
+    margin-left: 7px;
+  }
 }
-.checkbox-text a {
-  margin-left: 7px;
-}
+
 .checkbox {
   appearance: none;
   position: absolute;
+  &:checked + .leb-icon {
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .leb-icon {
   display: inline-block;
@@ -179,9 +191,4 @@ textarea {
   background-repeat: no-repeat;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox:checked + .leb-icon {
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }

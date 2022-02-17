@@ -4,6 +4,9 @@
 }
 .clients-list {
   display: flex;
+  & li + li {
+    margin-left: 30px;
+  }
 }
 .company-items {
   fill: #afb1b8;
@@ -16,18 +19,13 @@
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  &:hover,
+  &:focus {
+    border-color: var(--hover-color);
+    fill: var(--hover-color);
+  }
 }
-.clients-list li + li {
-  margin-left: 30px;
-}
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--hover-color);
-  fill: var(--hover-color);
-}
-.company-items {
-  fill: #afb1b8;
-}
+
 .clients-link svg {
   transition-property: fill, border-color;
   transition-duration: 250ms;

@@ -1,9 +1,19 @@
 .specials {
   padding-top: 103px;
   padding-bottom: 94px;
+  & h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 }
 .specials-list {
   display: flex;
+  & li + li {
+    margin-left: 30px;
+  }
 }
 .specials-li::before {
   display: block;
@@ -32,17 +42,4 @@
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
   background-size: 70px;
-}
-.specials-list li {
-  width: 270px;
-}
-.specials-list li + li {
-  margin-left: 30px;
-}
-.specials h3 {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
