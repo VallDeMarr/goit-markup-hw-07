@@ -6,7 +6,7 @@
 
 .footer-wrap {
   margin-left: 70px;
-  & h3 {
+  & .footer-wrap__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -36,6 +36,7 @@
   }
 }
 
-.footer-list li + li {
+.footer-list__link:not(:first-child) {
   margin-left: 10px;
 }
+

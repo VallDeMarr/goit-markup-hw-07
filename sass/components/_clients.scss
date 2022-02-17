@@ -2,16 +2,16 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients__list {
+.company {
   display: flex;
-  & li + li {
+  & .company__list:not(:first-child) {
     margin-left: 30px;
   }
 }
-.clients__items {
+.company__items {
   fill: #afb1b8;
 }
-.clients__link {
+.company__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,13 +25,12 @@
     fill: var(--hover-color);
   }
 }
-
-.clients__link svg {
+.company__items {
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover svg,
-.clients__link:focus svg {
+.company__link:hover .company__items,
+.company__link:focus .company__items {
   fill: #2196f3;
 }

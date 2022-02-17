@@ -15,19 +15,20 @@
 // Той випадок коли БЕМ дуже ускладнює життя, 
 // тому командою розробників прийнято рішення відмовитися 
 // від використання системи БЕМ
+
+.footer-addres__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: initial;
+  font-size: 14px;
+  line-height: 1.71;
+}
 .city {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
   font-style: initial;
 }
-.tel-mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: initial;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.footer-addres li + li {
+ .footer-addres__item {
   margin-top: 9px;
 }
 .footer-addres a {

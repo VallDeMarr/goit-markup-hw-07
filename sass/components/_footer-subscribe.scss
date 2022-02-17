@@ -4,7 +4,7 @@
   position: relative;
   width: 570px;
   height: 86px;
-  & p {
+  & .footer-subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -40,7 +40,7 @@
 }
 }
 
-.mail-fill {
+.footer-subscribe__fill {
   position: absolute;
   bottom: 0;
   left: 0;

@@ -205,12 +205,6 @@ a {
   height: 50px;
 }
 
-.main-studio p {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primery-color);
-}
-
 .main-studio h2 {
   font-weight: 700;
   font-size: 36px;
@@ -224,12 +218,18 @@ a {
   padding-bottom: 94px;
 }
 
-.specials h3 {
+.specials-list__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.specials-list__heading {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primery-color);
 }
 
 .specials-list {
@@ -324,14 +324,14 @@ a {
   background-color: var(--btn-bg-color);
 }
 
-.team h3 {
+.team-text__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.team p {
+.team-text__heading {
   font-size: 16px;
   line-height: 1.18;
 }
@@ -358,15 +358,15 @@ a {
   margin-right: 32px;
 }
 
-.socials-list {
+.socials {
   display: flex;
 }
 
-.socials-list li + li {
+.socials__list:not(:first-child) {
   margin-left: 10px;
 }
 
-.link-social {
+.socials__link {
   fill: #afb1b8;
   display: inline-flex;
   justify-content: center;
@@ -379,7 +379,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-social:hover, .link-social:focus {
+.socials__link:hover, .socials__link:focus {
   fill: var(--white-color);
   background-color: var(--hover-color);
 }
@@ -389,19 +389,19 @@ a {
   padding-bottom: 94px;
 }
 
-.clients__list {
+.company {
   display: flex;
 }
 
-.clients__list li + li {
+.company .company__list:not(:first-child) {
   margin-left: 30px;
 }
 
-.clients__items {
+.company__items {
   fill: #afb1b8;
 }
 
-.clients__link {
+.company__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,19 +411,19 @@ a {
   height: 92px;
 }
 
-.clients__link:hover, .clients__link:focus {
+.company__link:hover, .company__link:focus {
   border-color: var(--hover-color);
   fill: var(--hover-color);
 }
 
-.clients__link svg {
+.company__items {
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover svg,
-.clients__link:focus svg {
+.company__link:hover .company__items,
+.company__link:focus .company__items {
   fill: #2196f3;
 }
 
@@ -444,6 +444,13 @@ a {
   align-items: baseline;
 }
 
+.footer-addres__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: initial;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .city {
   color: var(--white-color);
   font-size: 14px;
@@ -451,14 +458,7 @@ a {
   font-style: initial;
 }
 
-.tel-mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: initial;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.footer-addres li + li {
+.footer-addres__item {
   margin-top: 9px;
 }
 
@@ -485,7 +485,7 @@ a {
   margin-left: 70px;
 }
 
-.footer-wrap h3 {
+.footer-wrap .footer-wrap__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -515,7 +515,7 @@ a {
   background-color: var(--hover-color);
 }
 
-.footer-list li + li {
+.footer-list__link:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -527,7 +527,7 @@ a {
   height: 86px;
 }
 
-.footer-subscribe p {
+.footer-subscribe .footer-subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -562,7 +562,7 @@ a {
   margin-left: 10px;
 }
 
-.mail-fill {
+.footer-subscribe__fill {
   position: absolute;
   bottom: 0;
   left: 0;
