@@ -1,8 +1,14 @@
 .specials {
-  padding-top: 103px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+     @media screen and (min-width: 1200px) {
+    
+      padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 .specials-list__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -15,15 +21,29 @@
   color: var(--primery-color);
 }
 .specials-list {
-  display: flex;
-  & li + li {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+
+  }
+
+}
+
+.specials-li {
+  margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-right: 30px;
+    }
+       @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 .specials-li::before {
   display: block;
   content: "";
-  width: 270px;
+
   height: 120px;
   margin-bottom: 30px;
   background: var(--btn-bg-color);
@@ -31,7 +51,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
 }
+
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
   background-size: 70px;

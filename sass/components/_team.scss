@@ -1,11 +1,39 @@
 .team-list {
-  display: flex;
+  display: block;
   text-align: center;
+  // margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+  }
+  @media screen and (min-width: 1200px) {
+
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--btn-bg-color);
+}
+.team__pic {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.team__title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .team-text__title {
   margin-bottom: 10px;
@@ -13,25 +41,33 @@
   font-size: 16px;
   line-height: 1.18;
 }
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-text__heading {
   font-size: 16px;
   line-height: 1.18;
 }
 .team-card {
-  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 30px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:last-child {
-    margin-right: 0px;
+  @media screen and (min-width: 768px) {
+ 
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
 
-.team-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .team-link {
   margin-top: 16px;
   margin-left: 32px;
@@ -40,6 +76,7 @@
 
 .socials {
   display: flex;
+  justify-content: center;
 }
 .socials__list:not(:first-child) {
   margin-left: 10px;

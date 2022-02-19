@@ -1,28 +1,30 @@
 .footer-subscribe {
-  margin-left: 93px;
-  display: flex;
-  position: relative;
-  width: 570px;
-  height: 86px;
-  & .footer-subscribe__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-top: 12px;
+    margin-left: 93px;
+    display: flex;
 
-  color: #ffffff;
-}
+    width: 570px;
+    height: 86px;
+  }
+  & .footer-subscribe__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
 }
 
 .submit-btn {
-  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  bottom: 0;
-  right: 0;
-  margin-left: 12px;
+  margin-left: 125px;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -35,22 +37,42 @@
   width: 200px;
   height: 50px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    margin-left: 275px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    margin-left: 12px;
+    bottom: 0;
+    right: 0;
+  }
   & svg {
-  margin-left: 10px;
-}
+    margin-left: 10px;
+  }
 }
 
 .footer-subscribe__fill {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-bottom: 20px;
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
+
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white-color);
+  @media screen and (min-width: 768px) {
+    margin-left: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 358px;
+    height: 50px;
+  }
 }

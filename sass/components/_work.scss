@@ -1,5 +1,13 @@
 .wwd {
+  display: none;
   padding-bottom: 94px;
+     @media screen and (min-width: 1200px) {
+       display: block;
+    
+  }
+}
+.wwd h2  {
+  text-align: center;
 }
 .work {
   display: flex;

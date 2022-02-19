@@ -5,15 +5,22 @@
   display: flex;
   & .logo {
     display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     color: var(--white-color);
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
-  & .container {
+}
+.footer > .container {
   align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
-}
-// Той випадок коли БЕМ дуже ускладнює життя, 
-// тому командою розробників прийнято рішення відмовитися 
+// Той випадок коли БЕМ дуже ускладнює життя,
+// тому командою розробників прийнято рішення відмовитися
 // від використання системи БЕМ
 
 .footer-addres__link {
@@ -28,7 +35,7 @@
   line-height: 1.71;
   font-style: initial;
 }
- .footer-addres__item {
+.footer-addres__item {
   margin-top: 9px;
 }
 .footer-addres a {
@@ -41,5 +48,24 @@
   }
 }
 .footer-first {
-  width: 231px;
+  width: 232px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 70px;
+    margin-bottom: 0px;
+    text-align: start;
+  }
+}
+.footer__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
