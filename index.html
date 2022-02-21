@@ -21,62 +21,91 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-
     <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="head-first">
-          <nav class="head-nav">
-            <a
-              class="logo"
-              href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              ><span class="accent">Web</span>Studio</a
-            >
-            <ul class="head-pages">
-              <li class="head-pages__item">
-                <a href="" class="head-pages__link current">Студия</a>
-              </li>
-              <li class="head-pages__item">
-                <a href="./portfolio.html" class="head-pages__link"
-                  >Портфолио</a
+          <a
+            class="logo"
+            href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <div class="head-wrapper" id="head-wrapper" data-menu>
+            <nav class="head-nav">
+              <ul class="head-pages">
+                <li class="head-pages__item">
+                  <a href="" class="head-pages__link current">Студия</a>
+                </li>
+                <li class="head-pages__item">
+                  <a href="./portfolio.html" class="head-pages__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="head-pages__item">
+                  <a href="" class="head-pages__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="head-address">
+              <li class="head-mail">
+                <a href="mailto:info@devstudio.com">
+                  <svg class="head-address-icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li class="head-pages__item">
-                <a href="" class="head-pages__link">Контакты</a>
+              <li class="head-phone">
+                <a href="tel:+380961111111">
+                  <svg class="head-address-icon" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="head-address">
-            <li class="head-mail">
-              <a href="mailto:info@devstudio.com">
-                <svg class="head-address-icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="head-phone">
-              <a href="tel:+380961111111">
-                <svg class="head-address-icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+            <ul class="mobile-menu-link">
+              <li class="mobile-menu__list"><a href="">Instagram</a></li>
+              <li class="mobile-menu__list"><a href="">Twitter</a></li>
+              <li class="mobile-menu__list"><a href="">Facebook</a></li>
+              <li class="mobile-menu__list"><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="head-wrapper"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/mobile.svg#icon-menu_40px-1"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/mobile.svg#icon-close_40px-1"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
     <!-- Main -->
     <main class="main-studio">
-      <section class="cap bg-photo">
+      <!-- <section class="cap bg-photo">
         <div class="container">
           <h1 class="cap__header">Эффективные решения для вашего бизнеса</h1>
           <button class="cap__btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
       <section class="specials">
         <div class="container">
           <!-- <h2>Особенности</h2> -->
@@ -153,17 +182,15 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img class="team__pic"
+              <img
+                class="team__pic"
                 src="./images/img(1).jpg"
                 alt="фото Ігора"
-                
-                
               />
               <div class="team-text">
                 <h3 class="team-text__title">Игорь Демьяненко</h3>
                 <p class="team-text__heading">Product Designer</p>
                 <div class="team-link">
-
                   <ul class="socials">
                     <li class="socials__list">
                       <a href="" class="socials__link">
@@ -206,10 +233,10 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team__pic"
+              <img
+                class="team__pic"
                 src="./images/img(2).jpg"
                 alt="фото Ольги"
-               
               />
               <div class="team-text">
                 <h3 class="team-text__title">Ольга Репина</h3>
@@ -257,10 +284,10 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team__pic"
+              <img
+                class="team__pic"
                 src="./images/img(3).jpg"
                 alt="фото Миколи"
-               
               />
               <div class="team-text">
                 <h3 class="team-text__title">Николай Тарасов</h3>
@@ -308,10 +335,10 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team__pic"
+              <img
+                class="team__pic"
                 src="./images/img(4).jpg"
                 alt="фото Михайла"
-               
               />
               <div class="team-text">
                 <h3 class="team-text__title">Михаил Ермаков</h3>
@@ -366,7 +393,6 @@
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="company">
-
             <li class="company__list">
               <a href="" class="company__link">
                 <svg class="company__items" width="106" height="60">
@@ -417,79 +443,81 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-        <div class="footer-first">
-          <a
-            class="logo"
-            href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer-addres">
-              <li class="footer-addres__item">
-                <a href="" class="footer-addres__link city"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+          <div class="footer-first">
+            <a
+              class="logo"
+              href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
+              ><span class="accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="footer-addres">
+                <li class="footer-addres__item">
+                  <a href="" class="footer-addres__link city"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-addres__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a href="tel:+380961111111" class="footer-addres__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-wrap">
+            <h3 class="footer-wrap__title">присоединяйтесь</h3>
+            <ul class="footer-list">
+              <li class="footer-list__link">
+                <a
+                  class="footer-list__socials"
+                  href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
                 >
+                  <svg class="socials-link" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-footer-inst"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
-                <a href="mailto:info@devstudio.com" class="footer-addres__link"
-                  >info@devstudio.com</a
+              <li class="footer-list__link">
+                <a
+                  class="footer-list__socials"
+                  href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
                 >
+                  <svg class="socials-link" width="20" height="20">
+                    <use
+                      href="./images/symbol-defs.svg#icon-footer-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
-                <a href="tel:+380961111111" class="footer-addres__link"
-                  >+38 096 111 11 11</a
+              <li class="footer-list__link">
+                <a
+                  class="footer-list__socials"
+                  href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
                 >
+                  <svg class="socials-link" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-footer-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list__link">
+                <a
+                  class="footer-list__socials"
+                  href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
+                >
+                  <svg class="socials-link" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-footer-in"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-wrap">
-          <h3 class="footer-wrap__title">присоединяйтесь</h3>
-          <ul class="footer-list">
-            <li class="footer-list__link">
-              <a
-                class="footer-list__socials"
-                href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              >
-                <svg class="socials-link" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-footer-inst"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list__link">
-              <a
-                class="footer-list__socials"
-                href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              >
-                <svg class="socials-link" width="20" height="20">
-                  <use
-                    href="./images/symbol-defs.svg#icon-footer-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list__link">
-              <a
-                class="footer-list__socials"
-                href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              >
-                <svg class="socials-link" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-footer-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list__link">
-              <a
-                class="footer-list__socials"
-                href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              >
-                <svg class="socials-link" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-footer-in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
@@ -574,5 +602,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

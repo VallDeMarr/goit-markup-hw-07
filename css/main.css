@@ -33,6 +33,8 @@ a {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -61,33 +63,33 @@ a {
   line-height: 1.19;
   color: var(--logo-color);
   text-decoration: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .accent {
   color: var(--hover-color);
 }
 
-.head-nav {
-  display: flex;
-  align-items: center;
+.header {
+  position: relative;
 }
 
 .head-pages,
 .head-first {
   display: flex;
-  align-items: center;
-  height: 80px;
 }
 
 .head-pages {
-  margin-left: 93px;
+  display: block;
 }
 
 .head-pages a {
   color: var(--header-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,31 +97,81 @@ a {
 
 .head-pages .head-pages__link {
   display: block;
-  padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.head-pages .head-pages__item + .head-pages__item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+  }
+  .menu-button .icon-close {
+    display: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .head-wrapper {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    left: 0;
+    height: 796px;
+  }
+  .head-wrapper.is-open {
+    display: block;
+  }
+  .mobile-menu-link {
+    display: flex;
+    margin-top: 64px;
+  }
+  .mobile-menu-link a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu__list:not(:first-child) {
+    padding-left: 10px;
+  }
+  .mobile-menu__list:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button,
+  .mobile-menu-link {
+    display: none;
+  }
 }
 
 .head-address {
   display: flex;
-  margin-left: auto;
+  flex-direction: column-reverse;
 }
 
 .head-address a {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primery-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-
-.head-address li + li {
-  margin-left: 50px;
 }
 
 .head-pages a:hover,
@@ -157,6 +209,29 @@ a {
 .head-mail,
 .head-phone {
   display: flex;
+}
+
+.head-phone {
+  margin-top: 302px;
+}
+
+.head-mail {
+  margin-top: 32px;
+}
+
+.head-mail a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.head-phone a {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .head-mail a,
@@ -197,13 +272,21 @@ a {
 .cap__header {
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .cap__header {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .cap__btn {
@@ -737,7 +820,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 125px;
+  margin-left: 140px;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1001,6 +1084,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1014,11 +1098,18 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-height: 581px;
-  width: 528px;
+  min-height: 609px;
+  width: 450px;
   background-color: var(--white-color);
   border-radius: 4px;
   display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 
 .modal p {

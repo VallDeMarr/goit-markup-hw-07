@@ -1,20 +1,28 @@
+.header {
+  position: relative;
+}
 .head-nav {
-  display: flex;
-  align-items: center;
+  // background-color: aqua;
+  // display: flex;
+  // align-items: center;
 }
 .head-pages,
 .head-first {
   display: flex;
-  align-items: center;
-  height: 80px;
+  // align-items: center;
+  // height: 80px;
 }
 .head-pages {
-  margin-left: 93px;
+  display: block;
+  // margin-left: 93px;
   & a {
     color: var(--header-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    // font-size: 14px;
+    // line-height: 1.14;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -22,10 +30,72 @@
   }
   & .head-pages__link {
     display: block;
-    padding-top: 32px;
     padding-bottom: 32px;
   }
   & .head-pages__item + .head-pages__item {
-    margin-left: 50px;
+    // margin-left: 50px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+  }
+  .menu-button .icon-close {
+    display: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .head-wrapper {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    left: 0;
+    height: 796px;
+    &.is-open {
+      display: block;
+    }
+  }
+  .mobile-menu-link {
+    display: flex;
+    margin-top: 64px;
+  }
+  .mobile-menu-link a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu__list:not(:first-child) {
+    padding-left: 10px;
+  }
+  .mobile-menu__list:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-button,
+  .mobile-menu-link {
+    display: none;
+  }
+}
+@media screen and (){
+  
 }
