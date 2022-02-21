@@ -165,13 +165,23 @@ textarea {
 .checkbox-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+    @media screen and (min-width: 768px){
+         font-size: 14px;
+  line-height: 1.71;
+  }
   & a {
     margin-left: 7px;
+     font-size: 12px;
+  line-height: 1.71;
+    @media screen and (min-width: 768px){
+         font-size: 14px;
+  line-height: 1.71;
+  }
   }
 }
 

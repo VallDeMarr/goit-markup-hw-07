@@ -20,10 +20,6 @@
     align-items: baseline;
   }
 }
-// Той випадок коли БЕМ дуже ускладнює життя,
-// тому командою розробників прийнято рішення відмовитися
-// від використання системи БЕМ
-
 .footer-addres__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: initial;
@@ -63,6 +59,12 @@
     margin-right: 70px;
     margin-bottom: 0px;
     text-align: start;
+  }
+  &.logo {
+      @media screen and (min-width: 768px) and (max-width: 1199) {
+    display: flex;
+    margin-right: 50px;  
+  }
   }
 }
 .footer__wrapper {
