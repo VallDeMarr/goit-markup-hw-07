@@ -16,9 +16,13 @@
   }
 }
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--btn-bg-color);
+    @media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--btn-bg-color);
+  }
 }
 .team__pic {
   display: block;

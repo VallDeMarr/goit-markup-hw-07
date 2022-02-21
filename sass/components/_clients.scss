@@ -18,21 +18,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: -15px;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
 .company__list {
   width: 210px;
-   margin-bottom: 30px;
+   margin: 15px;
   @media screen and (min-width: 768px) {
     width: 226px;
-    margin-bottom: 30px;
+
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
+    margin: 0;
   }
 }
 .company__items {

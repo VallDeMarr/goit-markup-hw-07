@@ -423,8 +423,8 @@ a {
 .cap {
   background-color: var(--cap-bg);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 190px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .cap__header {
@@ -464,10 +464,18 @@ a {
 
 .main-studio h2 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-studio h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .specials {
@@ -483,12 +491,17 @@ a {
 }
 
 .specials-list__title {
-  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .specials-list__title {
+    text-align: center;
+  }
 }
 
 .specials-list__heading {
@@ -603,6 +616,8 @@ a {
   justify-content: center;
   align-items: center;
   background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .team-list {
@@ -626,9 +641,16 @@ a {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--btn-bg-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__pic {
@@ -751,29 +773,31 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: -15px;
 }
 
 @media screen and (min-width: 1200px) {
   .company {
     flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
 .company__list {
   width: 210px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .company__list {
     width: 226px;
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .company__list {
     width: 170px;
+    margin: 0;
   }
 }
 
@@ -877,6 +901,7 @@ a {
 @media screen and (min-width: 768px) {
   .footer-first {
     margin-left: 60px;
+    margin-right: 165px;
   }
 }
 
@@ -1104,11 +1129,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .portfolio__buttons {
     justify-content: center;
   }
@@ -1117,6 +1142,12 @@ a {
 .portfolio-btn__list {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn__list {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
