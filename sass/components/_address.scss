@@ -23,7 +23,6 @@
       padding-bottom: 32px;
     }
   }
-
 }
 
 .head-pages a:hover,
@@ -121,5 +120,12 @@
   margin-right: 10px;
   @media screen and (min-width: 768px) {
     display: block;
+  }
+}
+
+.head-first > .logo {
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
