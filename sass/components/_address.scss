@@ -1,20 +1,29 @@
 .head-address {
   display: flex;
   flex-direction: column-reverse;
-  // margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 305px;
+  }
   & a {
     display: block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     color: var(--primery-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
-  & li + li {
-    // margin-left: 50px;
-  }
+
 }
 
 .head-pages a:hover,
@@ -24,18 +33,23 @@
   color: var(--hover-color);
 }
 .head-pages__link.current {
-  color: var(--hover-color);
+  @media screen and (min-width: 768px) {
+    color: var(--hover-color);
+  }
 }
 .head-pages__link.current::after {
-  display: flex;
+  display: none;
   position: absolute;
-  // content: "";
+  content: "";
   width: 100%;
   height: 4px;
   left: 0;
   bottom: 0;
   background: #2196f3;
   border-radius: 2px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .head-pages__item {
@@ -51,16 +65,27 @@
   display: flex;
 }
 .head-phone {
-  margin-top: 302px;
+  margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 .head-mail {
   margin-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 .head-mail a {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .head-phone a {
   font-weight: 500;
@@ -68,7 +93,13 @@
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+  }
 }
+
 .head-mail a,
 .head-phone a {
   display: inline-flex;
@@ -86,5 +117,9 @@
 }
 
 .head-address-icon {
+  display: none;
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }

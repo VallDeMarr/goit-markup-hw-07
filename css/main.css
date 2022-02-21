@@ -67,6 +67,18 @@ a {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93;
+  }
+}
+
 .accent {
   color: var(--hover-color);
 }
@@ -75,13 +87,30 @@ a {
   position: relative;
 }
 
+.head-nav {
+  display: flex;
+}
+
 .head-pages,
 .head-first {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .head-pages,
+  .head-first {
+    align-items: center;
+  }
+}
+
 .head-pages {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .head-pages {
+    display: flex;
+  }
 }
 
 .head-pages a {
@@ -95,9 +124,28 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .head-pages a {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .head-pages .head-pages__link {
   display: block;
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .head-pages .head-pages__link {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-pages .head-pages__item + .head-pages__item {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -121,18 +169,21 @@ a {
     display: none;
   }
   .head-wrapper {
-    background-color: #fff;
+    background-color: #ffffff;
     display: none;
-    position: absolute;
+    position: fixed;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
     width: 100%;
     left: 0;
-    height: 796px;
+    height: 100%;
+    overflow-y: scroll;
   }
   .head-wrapper.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .mobile-menu-link {
     display: flex;
@@ -161,9 +212,32 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .head-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .head-address {
   display: flex;
   flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .head-address {
+    display: flex;
+    flex-direction: column;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-address {
+    display: flex;
+    flex-direction: row;
+    margin-left: 305px;
+  }
 }
 
 .head-address a {
@@ -174,6 +248,13 @@ a {
   line-height: 1.14;
 }
 
+@media screen and (min-width: 1200px) {
+  .head-address a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .head-pages a:hover,
 .head-pages a:focus,
 .head-address a:hover,
@@ -181,13 +262,15 @@ a {
   color: var(--hover-color);
 }
 
-.head-pages__link.current {
-  color: var(--hover-color);
+@media screen and (min-width: 768px) {
+  .head-pages__link.current {
+    color: var(--hover-color);
+  }
 }
 
 .head-pages__link.current::after {
+  display: none;
   position: absolute;
-  display: flex;
   content: "";
   width: 100%;
   height: 4px;
@@ -195,6 +278,12 @@ a {
   bottom: 0;
   background: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .head-pages__link.current::after {
+    display: flex;
+  }
 }
 
 .head-pages__item {
@@ -212,11 +301,24 @@ a {
 }
 
 .head-phone {
-  margin-top: 302px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .head-phone {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 
 .head-mail {
   margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .head-mail {
+    margin: 0;
+  }
 }
 
 .head-mail a {
@@ -226,12 +328,27 @@ a {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+  .head-mail a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
 .head-phone a {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .head-phone a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+  }
 }
 
 .head-mail a,
@@ -251,7 +368,14 @@ a {
 }
 
 .head-address-icon {
+  display: none;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .head-address-icon {
+    display: block;
+  }
 }
 
 .bg-photo {
@@ -603,6 +727,7 @@ a {
 
 .company__list {
   width: 210px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -674,6 +799,7 @@ a {
 @media screen and (min-width: 1200px) {
   .footer > .container {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -754,7 +880,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer-wrap {
-    margin-top: 12px;
+    margin-top: 28px;
   }
 }
 

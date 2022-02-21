@@ -22,46 +22,82 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header"> 
+    <header class="header">
       <div class="container">
         <div class="head-first">
-          <nav class="head-nav">
-            <a
-              class="logo"
-              href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
-              ><span class="accent">Web</span>Studio</a
+          <a
+            class="logo"
+            href="https://i.pinimg.com/564x/7c/ce/30/7cce3030a7b2b9a6e2a41213b5547953.jpg"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <div class="head-wrapper" id="head-wrapper" data-menu>
+            <nav class="head-nav">
+              <ul class="head-pages">
+                <li class="head-pages__item">
+                  <a href="./index.html" class="head-pages__link">Студия</a>
+                </li>
+                <li class="head-pages__item">
+                  <a href="./portfolio.html" class="head-pages__link current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="head-pages__item">
+                  <a href="" class="head-pages__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <ul class="head-address">
+                <li class="head-mail">
+                  <a href="mailto:info@devstudio.com">
+                    <svg class="head-address-icon" width="16" height="12">
+                      <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="head-phone">
+                  <a href="tel:+380961111111">
+                    <svg class="head-address-icon" width="10" height="16">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu-link">
+                <li class="mobile-menu__list"><a href="">Instagram</a></li>
+                <li class="mobile-menu__list"><a href="">Twitter</a></li>
+                <li class="mobile-menu__list"><a href="">Facebook</a></li>
+                <li class="mobile-menu__list"><a href="">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="head-wrapper"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-            <ul class="head-pages">
-              <li class="head-pages__item">
-                <a href="./index.html" class="head-pages__link">Студия</a>
-              </li>
-              <li class="head-pages__item">
-                <a href="./portfolio.html" class="head-pages__link current">Портфолио</a>
-              </li>
-              <li class="head-pages__item"><a href="" class="head-pages__link">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="head-address">
-            <li class="head-mail">
-              <a href="mailto:info@devstudio.com">
-                <svg class="head-address-icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="head-phone">
-              <a href="tel:+380961111111">
-                <svg class="head-address-icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+              <use
+                class="icon-menu"
+                href="./images/mobile.svg#icon-menu_40px-1"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/mobile.svg#icon-close_40px-1"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
     <!-- Main -->
     <main class="main-portfolio">
       <section class="portfolio">
