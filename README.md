@@ -3,3 +3,4 @@
 - CSS
 - SASS
 - JavaScript
+- Git
