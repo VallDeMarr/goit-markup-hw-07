@@ -1,1 +1,5 @@
-# goit-markup-hw-01
+# In this project I used the following tools:
+- HTML
+- CSS
+- SASS
+- JavaScript
